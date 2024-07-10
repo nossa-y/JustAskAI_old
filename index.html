@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="canonical" href="https://https://demo.themesberg.com/landwind/" />
+    <link rel="canonical" href="https://demo.themesberg.com/landwind/" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +18,7 @@
     <!-- Social media share -->
     <meta property="og:title" content="JustAskAI - Streamlining HR Processes">
     <meta property="og:site_name" content="JustAskAI">
-    <meta property="og:url" content="https://https://demo.themesberg.com/landwind/">
+    <meta property="og:url" content="https://demo.themesberg.com/landwind/">
     <meta property="og:description" content="JustAskAI uses AI technology to streamline HR processes, ensuring efficient onboarding and document management.">
     <meta property="og:type" content="">
     <meta property="og:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/github/landwind/og-image.png">
@@ -36,6 +35,25 @@
     <meta name="theme-color" content="#ffffff">
     <link href="./output.css" rel="stylesheet">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    
+    <style>
+        .hidden {
+            display: none;
+        }
+        .popup {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        .popup.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .popup-container {
+            max-width: 500px;
+            width: 90%;
+        }
+    </style>
 </head>
 <body>
     <header class="fixed w-full">
@@ -49,7 +67,7 @@
                     <div class="hidden mt-2 mr-4 sm:inline-block">
                         <a class="github-button" href="https://github.com/nossa-y/" data-size="large" data-icon="octicon-star" data-show-count="true" aria-label="Star themesberg/landwind on GitHub">Star</a>
                     </div>
-                    <a href="https://github.com/nossa-y/" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Download</a>
+                    <a href="https://github.com/nossa-y/" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"></a>
                     <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
@@ -60,22 +78,6 @@
                     <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                         <li>
                             <a href="#" class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white" aria-current="page">Home</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Company</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Marketplace</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Features</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Team</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -86,12 +88,10 @@
     <section class="bg-white dark:bg-gray-900">
         <div class="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
             <div class="mr-auto place-self-center lg:col-span-7">
-               
-
- <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white">Revolutionizing HR with JustAskAI</h1>
+                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white">Revolutionizing HR with JustAskAI</h1>
                 <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">JustAskAI utilizes advanced AI technology to streamline HR processes, improving efficiency and accuracy in employee onboarding and document management.</p>
-                <a href="#" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Get Started</a>
-                <a href="#" class="text-gray-900 bg-white border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none dark:text-white dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Learn More</a>
+                <a href="#" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Get Started (soon)</a>
+                <a href="#" class="learn-more text-gray-900 bg-white border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none dark:text-white dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Learn more</a>
             </div>
             <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
                 <!-- <img src="https://themesberg.s3.us-east-2.amazonaws.com/public/github/landwind/hero-image.png" alt="mockup"> -->
@@ -103,15 +103,15 @@
         <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
             <dl class="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white">
                 <div class="flex flex-col items-center justify-center">
-                    <dt class="mb-2 text-3xl md:text-4xl font-extrabold">10K+</dt>
+                    <dt class="mb-2 text-3xl md:text-4xl font-extrabold">X</dt>
                     <dd class="font-light text-gray-500 dark:text-gray-400">Companies</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
-                    <dt class="mb-2 text-3xl md:text-4xl font-extrabold">50K+</dt>
+                    <dt class="mb-2 text-3xl md:text-4xl font-extrabold">X</dt>
                     <dd class="font-light text-gray-500 dark:text-gray-400">Users</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
-                    <dt class="mb-2 text-3xl md:text-4xl font-extrabold">90+</dt>
+                    <dt class="mb-2 text-3xl md:text-4xl font-extrabold">X</dt>
                     <dd class="font-light text-gray-500 dark:text-gray-400">Countries</dd>
                 </div>
             </dl>
@@ -136,8 +136,8 @@
         <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
             <h2 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">Ready to transform your HR processes?</h2>
             <p class="mb-8 font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Get started with JustAskAI today and see how our AI-powered solutions can revolutionize the way you manage HR tasks.</p>
-            <a href="#" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Get Started</a>
-            <a href="#" class="text-gray-900 bg-white border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none dark:text-white dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Learn More</a>
+            <a href="#" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Get Started (soon)</a>
+            <a href="#" class="learn-more text-gray-900 bg-white border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none dark:text-white dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Learn more</a>
         </div>
     </section>
 
@@ -212,9 +212,7 @@
             </div>
             <div class="px-4 py-6 bg-gray-50 dark:bg-gray-800 md:flex md:items-center md:justify-between">
                 <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2024 <a href="#" class="hover:underline">JustAskAI™</a>. All Rights Reserved.</span>
-                <div class="flex mt-4 space-x-6 sm:justify-center md:
-
-mt-0">
+                <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0">
                     <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path fill-rule="evenodd" d="M18.94 2H5.06C3.92 2 3 2.92 3 4.06v15.88C3 21.08 3.92 22 5.06 22h13.88c1.14 0 2.06-.92 2.06-2.06V4.06C21 2.92 20.08 2 18.94 2zM8.5 19H6.5v-8h2v8zm-1-9.25A1.25 1.25 0 1 1 8.75 8.5 1.25 1.25 0 0 1 7.5 9.75zM19 19h-2v-4.5c0-.825-.675-1.5-1.5-1.5s-1.5.675-1.5 1.5V19h-2v-8h2v1.2c.615-.735 1.455-1.2 2.5-1.2 1.68 0 3 1.32 3 3V19z" clip-rule="evenodd"></path>
@@ -236,16 +234,82 @@ mt-0">
                             <path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12c0 5.1 3.84 9.3 8.76 9.92v-7H8.9v-2.92h1.86v-1.1c0-1.85 1.15-2.86 2.75-2.86.78 0 1.55.12 1.55.12v1.7H14.1c-1 0-1.28.62-1.28 1.26v1.48h2.34l-.37 2.92h-1.97v7c4.92-.62 8.76-4.82 8.76-9.92 0-5.52-4.48-10-10-10z" clip-rule="evenodd"></path>
                         </svg>
                     </a>
-                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12c0 5.1 3.84 9.3 8.76 9.92v-7H8.9v-2.92h1.86v-1.1c0-1.85 1.15-2.86 2.75-2.86.78 0 1.55.12 1.55.12v1.7H14.1c-1 0-1.28.62-1.28 1.26v1.48h2.34l-.37 2.92h-1.97v7c4.92-.62 8.76-4.82 8.76-9.92 0-5.52-4.48-10-10-10z" clip-rule="evenodd"></path>
-                        </svg>
-                    </a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Pop-up Form -->
+    <div id="popup" class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50">
+        <div class="popup popup-container bg-white rounded-lg shadow-lg p-12 relative">
+            <button class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-3xl" onclick="togglePopup()">&times;</button>
+            <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+            <form id="contactForm">
+                <div class="mb-4">
+                    <label for="firstName" class="block text-sm font-medium text-gray-700">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required class="mt-1 p-2 block w-full border border-gray-300 rounded-md">
+                </div>
+                <div class="mb-4">
+                    <label for="lastName" class="block text-sm font-medium text-gray-700">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required class="mt-1 p-2 block w-full border border-gray-300 rounded-md">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" required class="mt-1 p-2 block w-full border border-gray-300 rounded-md">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" required class="mt-1 p-2 block w-full border border-gray-300 rounded-md"></textarea>
+                </div>
+                <div class="flex justify-between">
+                    <button type="submit" class="bg-purple-700 text-white px-4 py-2 rounded-lg hover:bg-purple-800 focus:ring-4 focus:ring-purple-300">Submit</button>
+                    <button type="button" class="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-800 focus:ring-4 focus:ring-gray-300" onclick="bookCall()">Book a Call</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <style>
+        .popup-container {
+            max-width: 500px;
+            width: 90%;
+            padding: 1cm; /* Ajout de padding de 3cm */
+        }
+        .popup-container .absolute {
+            top: 0.5rem;
+            right: 0.5rem;
+        }
+    </style>
+    
+    <script>
+        function togglePopup() {
+            const popup = document.getElementById('popup');
+            const popupContent = popup.querySelector('.popup');
+            popup.classList.toggle('hidden');
+            setTimeout(() => {
+                popupContent.classList.toggle('show');
+            }, 10);
+        }
+    
+        function bookCall() {
+            // Implémentez votre fonctionnalité "Book a Call" ici
+            alert("La fonctionnalité Book a Call arrive bientôt !");
+        }
+    
+        document.querySelectorAll('a.learn-more').forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+                togglePopup();
+            });
+        });
+    
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Implémentez votre fonctionnalité de soumission de formulaire ici
+            alert("Formulaire soumis !");
+            togglePopup();
+        });
+    </script>
+    
 </body>
-
 </html>
